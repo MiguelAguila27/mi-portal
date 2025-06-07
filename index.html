@@ -59,10 +59,11 @@
       justify-content: center;
       align-items: center;
       color: white;
-      font-size: 2.8rem;
+      font-size: 2.2rem;
       font-weight: bold;
       text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
       margin-top: 70px;
+      text-align: center;
     }
     .card {
       background-color: #102840;
@@ -73,22 +74,6 @@
     .card:hover {
       transform: scale(1.03);
       box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
-    }
-    .media-style {
-      background-color: white;
-      padding: 20px;
-      border-radius: 10px;
-      display: flex;
-      gap: 20px;
-      align-items: flex-start;
-      color: black;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-    }
-    .media-style img {
-      width: 500px;
-      height: 500px;
-      border-radius: 10px;
-      object-fit: cover;
     }
   </style>
 </head>
@@ -120,9 +105,11 @@
   <section class="section" id="sobremi">
     <div class="container">
       <h2 class="text-center mb-4">Sobre mí</h2>
-      <div class="media-style mx-auto" style="max-width: 900px;">
-        <img src="img/Fotopeerfil.jpg" alt="Foto de perfil">
-        <div>
+      <div class="row bg-white text-black rounded shadow mx-auto p-3" style="max-width: 900px;">
+        <div class="col-12 col-md-5 d-flex justify-content-center align-items-start mb-3 mb-md-0">
+          <img src="img/Fotopeerfil.jpg" alt="Foto de perfil" class="img-fluid rounded" style="max-height: 100%; object-fit: cover;">
+        </div>
+        <div class="col-12 col-md-7 text-center text-md-start">
           <p><strong>Mi nombre es Miguel Armando.</strong></p>
           <p>Soy una persona entusiasta y orientada a los retos, con una profunda pasión por la aviación, la tecnología y el aprendizaje constante. Actualmente estudio Ingeniería en Sistemas, donde he desarrollado un especial interés por el diseño y desarrollo de bases de datos. Cuento con experiencia en la creación de páginas web y en la enseñanza del idioma inglés, lo que me ha permitido fortalecer mis habilidades de comunicación y liderazgo. Además, soy un amante de los gatos y valoro el equilibrio entre la vida profesional y los intereses personales. Mi enfoque combina creatividad, análisis técnico y compromiso con la mejora continua. Este portal es un espacio donde comparto quién soy, mis ideas y mis proyectos. Me interesa explorar nuevas herramientas digitales, colaborar en proyectos creativos y aportar al crecimiento de comunidades con base tecnológica.</p>
         </div>
@@ -134,37 +121,37 @@
     <div class="container">
       <h2 class="text-center mb-4">Portafolio</h2>
       <div class="row g-4">
-        <div class="col-md-4">
+        <div class="col-md-4 col-sm-6">
           <div class="card p-3">
             <h5>Plataforma Web para Farmacias</h5>
             <p>Desarrollo de un sistema integral de gestión de inventario y control de productos para una farmacia.</p>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 col-sm-6">
           <div class="card p-3">
             <h5>Gestión Web con Analítica Integrada</h5>
             <p>Implementación de un sistema de gestión con dashboards interactivos basados en analítica de datos.</p>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 col-sm-6">
           <div class="card p-3">
             <h5>Predicción de Ventas mediante Analítica</h5>
             <p>Creación de una plataforma para el análisis y predicción de ventas utilizando modelos de comportamiento histórico.</p>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 col-sm-6">
           <div class="card p-3">
             <h5>Sistema de Información Gerencial</h5>
             <p>Desarrollo de un SIG con panel de control, gestión de indicadores, reportes dinámicos y análisis por regresión.</p>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 col-sm-6">
           <div class="card p-3">
             <h5>Monitoreo Geográfico con A9G</h5>
             <p>Implementación de geolocalización en tiempo real usando A9G y visualización web personalizada.</p>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 col-sm-6">
           <div class="card p-3">
             <h5>Aplicación Móvil de Gestión</h5>
             <p>Desarrollo de una app móvil para facilitar la administración de tareas y recursos operativos.</p>
